@@ -1,11 +1,11 @@
 {
 	"name": "@techmmunity/utils",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"main": "index.js",
 	"types": "index.d.ts",
 	"license": "Apache-2.0",
 	"author": "Techmmunity",
-	"description": "Description",
+	"description": "Lightweight utils for every project",
 	"homepage": "https://github.com/techmmunity/utils#readme",
 	"bugs": {
 		"url": "https://github.com/techmmunity/utils/issues"
