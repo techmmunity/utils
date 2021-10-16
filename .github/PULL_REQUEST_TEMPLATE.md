@@ -8,12 +8,11 @@ Issue Number: N/A
 
 Please check if your PR fulfills the following requirements:
 
-- [ ] The commit message follows our guidelines: https://github.com/techmmunity/easy-check/blob/master/CONTRIBUTING.md
-- [ ] Tests for the changes have been added
+- [ ] The commit message follows our guidelines: https://github.com/techmmunity/utils/blob/master/CONTRIBUTING.md
+- [ ] Tests for the changes have been added / updated
 - [ ] Docs have been added / updated
 - [ ] I followed GitFlow pattern to create the branch
 - [ ] My code produces no warnings or errors
-- [ ] Tests for the changes have been added / updated
 
 ## PR Type
 
@@ -27,6 +26,7 @@ What kind of change does this PR introduce?
 [ ] Code style update (formatting, local variables)
 [ ] Refactoring (no functional changes, no api changes)
 [ ] CI/CD related changes
+[ ] Other: ...
 ```
 
 ## Does this PR introduce a breaking change?

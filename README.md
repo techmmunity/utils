@@ -1,28 +1,26 @@
 <div align="center">
-	<img src="https://github.com/techmmunity/base-project-packages/raw/master/resources/logo.jpg" width="300" height="300">
-</div>
 
-<div align="center">
+<img src="https://github.com/techmmunity/eslint-config/raw/master/resources/logo.gif" width="300" height="300">
 
-# Techmmunity - Base Project Packages
+# Techmmunity - Utils
 
 <a href="https://github.com/techmmunity/eslint-config">
 	<img src="https://img.shields.io/badge/style%20guide-Techmmunity-01d2ce?style=for-the-badge" alt="Style Guide: Techmmunity">
 </a>
-<a href="https://www.codefactor.io/repository/github/techmmunity/base-project-packages">
-	<img src="https://www.codefactor.io/repository/github/techmmunity/base-project-packages/badge?style=for-the-badge" alt="CodeFactor">
+<a href="https://www.codefactor.io/repository/github/techmmunity/utils">
+	<img src="https://www.codefactor.io/repository/github/techmmunity/utils/badge?style=for-the-badge" alt="CodeFactor">
 </a>
-<a href="https://coveralls.io/github/techmmunity/base-project-packages?branch=master">
-	<img src="https://img.shields.io/coveralls/github/techmmunity/base-project-packages/master?style=for-the-badge" alt="Coveralls">
+<a href="https://coveralls.io/github/techmmunity/utils?branch=master">
+	<img src="https://img.shields.io/coveralls/github/techmmunity/utils/master?style=for-the-badge" alt="Coveralls">
 </a>
-<a href="https://github.com/techmmunity/base-project-packages/actions/workflows/coverage.yml">
-	<img src="https://img.shields.io/github/workflow/status/techmmunity/base-project-packages/tests?label=tests&logo=github&style=for-the-badge" alt="Tests">
+<a href="https://github.com/techmmunity/utils/actions/workflows/coverage.yml">
+	<img src="https://img.shields.io/github/workflow/status/techmmunity/utils/tests?label=tests&logo=github&style=for-the-badge" alt="Tests">
 </a>
-<a href="https://www.npmjs.com/package/@techmmunity/base-project-packages">
-	<img src="https://img.shields.io/npm/v/@techmmunity/base-project-packages.svg?color=CC3534&style=for-the-badge" alt="Npm">
+<a href="https://www.npmjs.com/package/@techmmunity/utils">
+	<img src="https://img.shields.io/npm/v/@techmmunity/utils.svg?color=CC3534&style=for-the-badge" alt="Npm">
 </a>
-<a href="https://www.npmjs.com/package/@techmmunity/base-project-packages">
-	<img src="https://img.shields.io/npm/dw/@techmmunity/base-project-packages.svg?style=for-the-badge" alt="Downloads">
+<a href="https://www.npmjs.com/package/@techmmunity/utils">
+	<img src="https://img.shields.io/npm/dw/@techmmunity/utils.svg?style=for-the-badge" alt="Downloads">
 </a>
 
 <br>
@@ -30,38 +28,35 @@
 
 </div>
 
-> Description of the package
+Package of utils, make in a way to let you import only the functions that you really need, so it doesn't make your project heavier than it needs to be.
+
+| function               | description                                                            |
+| ---------------------- | ---------------------------------------------------------------------- |
+| `cleanObj`             | Remove undefined and null values from an object                        |
+| `getArrayUniqueValues` | Remove duplicated values of an array (only work with primitive values) |
+| `getTypeof`            | Fix native "typeof"                                                    |
+| `hasRequiredEnvVars`   | Verify if all env vars are defined                                     |
+| `isEmptyArray`         | Checks if is an array and it's empty                                   |
+| `isEmptyObject`        | Checks if is an object and it's empty                                  |
+| `isNotEmptyArray`      | Checks if is an array and it's NOT empty                               |
+| `isNotEmptyObject`     | Checks if is an object and it's NOT empty                              |
 
 ## Install
 
 With Yarn:
 
 ```sh
-yarn add @techmmunity/base-project-packages
+yarn add @techmmunity/utils
 ```
 
 With NPM:
 
 ```sh
-npm i @techmmunity/base-project-packages
-```
-
-## Usage
-
-With TypeScript:
-
-```ts
-
-```
-
-With JavaScript:
-
-```js
-
+npm i @techmmunity/utils
 ```
 
 ## How to contribute?
 
-All the details about contributing to the project are [described here](https://github.com/techmmunity/base-project-services/blob/master/CONTRIBUTING.md).
+All the details about contributing to the project are [described here](https://github.com/techmmunity/utils/blob/master/CONTRIBUTING.md).
 
 ## Documentation

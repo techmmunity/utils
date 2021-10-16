@@ -107,12 +107,13 @@
 
 	// Spell Checker
 	"cSpell.words": [
-		"techmmunity",
-		"vercel",
-		"sonarjs",
-		"tsbuildinfo",
-		"prebuild",
+		"injectables",
 		"nodemodules",
-		"injectables"
+		"prebuild",
+		"sonarjs",
+		"techmmunity",
+		"tsbuildinfo",
+		"Typeof",
+		"vercel"
 	]
 }

@@ -8,18 +8,17 @@ module.exports = {
 	transform: {
 		"^.+\\.(t|j)s$": "ts-jest",
 	},
-	collectCoverageFrom: ["**/*.ts"],
-	// setupFiles: ["./v1/tests/setup.ts"],
+	collectCoverageFrom: ["**/*.ts", "!./index.ts"],
 	coverageDirectory: "../coverage",
 	testEnvironment: "node",
 	moduleDirectories: ["node_modules", "src"],
 	resetMocks: true,
-	// coverageThreshold: {
-	// 	global: {
-	// 		branches: 100,
-	// 		functions: 100,
-	// 		lines: 100,
-	// 		statements: 100,
-	// 	},
-	// },
+	coverageThreshold: {
+		global: {
+			statements: 96.49,
+			branches: 93.33,
+			functions: 100,
+			lines: 97.72,
+		},
+	},
 };
