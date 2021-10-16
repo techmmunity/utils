@@ -19,7 +19,7 @@
 		"keywords"
 	],
 	"devDependencies": {
-		"@techmmunity/eslint-config": "^5.0.2",
+		"@techmmunity/eslint-config": "^5.0.4",
 		"@types/jest": "^26.0.24",
 		"@vercel/ncc": "^0.29.0",
 		"eslint": "^7.31.0",
