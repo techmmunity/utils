@@ -1,6 +1,6 @@
 {
 	"name": "@techmmunity/utils",
-	"version": "0.0.1",
+	"version": "1.0.0",
 	"main": "index.js",
 	"types": "index.d.ts",
 	"license": "Apache-2.0",
@@ -15,8 +15,14 @@
 		"url": "git+https://github.com/techmmunity/utils.git"
 	},
 	"keywords": [
-		"package",
-		"keywords"
+		"utils",
+		"clean-obj",
+		"object",
+		"array",
+		"lodash",
+		"ramda",
+		"empty-array",
+		"empty-object"
 	],
 	"devDependencies": {
 		"@techmmunity/eslint-config": "^5.0.4",
