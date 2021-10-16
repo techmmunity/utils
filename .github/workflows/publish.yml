@@ -1,0 +1,56 @@
+name: Publish To NPM
+
+on:
+  release:
+    types: [published]
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Install Dependencies
+        run: |
+          yarn
+
+      - name: Run Tests
+        run: |
+          yarn test
+
+      - name: Build
+        run: |
+          yarn build
+
+      - name: Copy files
+        run: |
+          cp package.json dist/package.json
+          cp README.md dist/README.md
+          cp LICENSE dist/LICENSE
+
+      - name: Remove Tests
+        run: |
+          rm -rf dist/tests
+
+      - name: Setup Package Manager
+        uses: actions/setup-node@master
+        with:
+          node-version: 14
+          registry-url: "https://registry.npmjs.org/"
+
+      - name: Install the most recent version of NPM
+        # This is done so the "set-script" command can be used
+        run: |
+          npm install -g npm@latest
+
+      - name: Remove "prepare" script
+        # This script must be removed because it uses
+        # a devDependency and they doesn't exist in this context
+        run: |
+          cd ./dist && npm set-script prepare "" && cd ..
+
+      - name: Publish to NPM
+        run: |
+          npm publish ./dist --access public
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_AUTH_TOKEN }}

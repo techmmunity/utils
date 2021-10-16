@@ -1,0 +1,46 @@
+{
+	"name": "@techmmunity/base-project-packages",
+	"version": "0.0.1",
+	"main": "index.js",
+	"types": "index.d.ts",
+	"license": "Apache-2.0",
+	"author": "Techmmunity",
+	"description": "Description",
+	"homepage": "https://github.com/techmmunity/base-project-packages#readme",
+	"bugs": {
+		"url": "https://github.com/techmmunity/base-project-packages/issues"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/techmmunity/base-project-packages.git"
+	},
+	"keywords": [
+		"package",
+		"keywords"
+	],
+	"devDependencies": {
+		"@techmmunity/eslint-config": "^5.0.2",
+		"@types/jest": "^26.0.24",
+		"@vercel/ncc": "^0.29.0",
+		"eslint": "^7.31.0",
+		"husky": "^7.0.1",
+		"jest": "^27.0.6",
+		"lint-staged": "^11.2.3",
+		"prettier": "^2.3.2",
+		"ts-jest": "^27.0.4",
+		"ts-node": "^10.3.0",
+		"typescript": "^4.3.5"
+	},
+	"scripts": {
+		"prepare": "husky install",
+		"ts-node": "ts-node",
+		"test": "jest",
+		"test:cov": "jest --coverage",
+		"build": "ncc build src/index.ts -o dist -m -s",
+		"format": "eslint . --fix --quiet",
+		"lint": "eslint . --quiet",
+		"update-dependencies": "yarn upgrade-interactive --latest",
+		"husky:pre-commit": "tsc",
+		"lk": "yarn build && cp package.json dist/package.json && cd dist && yarn link && cd .."
+	}
+}
