@@ -14,7 +14,7 @@
 	<img src="https://img.shields.io/coveralls/github/techmmunity/utils/master?style=for-the-badge" alt="Coveralls">
 </a>
 <a href="https://github.com/techmmunity/utils/actions/workflows/coverage.yml">
-	<img src="https://img.shields.io/github/workflow/status/techmmunity/utils/tests?label=tests&logo=github&style=for-the-badge" alt="Tests">
+	<img src="https://img.shields.io/github/workflow/status/techmmunity/utils/Collect%20Coverage?label=tests&logo=github&style=for-the-badge" alt="Tests">
 </a>
 <a href="https://www.npmjs.com/package/@techmmunity/utils">
 	<img src="https://img.shields.io/npm/v/@techmmunity/utils.svg?color=CC3534&style=for-the-badge" alt="Npm">
@@ -30,17 +30,6 @@
 
 Package of utils, make in a way to let you import only the functions that you really need, so it doesn't make your project heavier than it needs to be.
 
-| function               | description                                                            |
-| ---------------------- | ---------------------------------------------------------------------- |
-| `cleanObj`             | Remove undefined and null values from an object                        |
-| `getArrayUniqueValues` | Remove duplicated values of an array (only work with primitive values) |
-| `getTypeof`            | Fix native "typeof"                                                    |
-| `hasRequiredEnvVars`   | Verify if all env vars are defined                                     |
-| `isEmptyArray`         | Checks if is an array and it's empty                                   |
-| `isEmptyObject`        | Checks if is an object and it's empty                                  |
-| `isNotEmptyArray`      | Checks if is an array and it's NOT empty                               |
-| `isNotEmptyObject`     | Checks if is an object and it's NOT empty                              |
-
 ## Install
 
 With Yarn:
@@ -55,8 +44,16 @@ With NPM:
 npm i @techmmunity/utils
 ```
 
-## How to contribute?
+# Docs
 
-All the details about contributing to the project are [described here](https://github.com/techmmunity/utils/blob/master/CONTRIBUTING.md).
-
-## Documentation
+| function               | description                                                            |
+| ---------------------- | ---------------------------------------------------------------------- |
+| `cleanObj`             | Remove undefined and null values from an object                        |
+| `getArrayUniqueValues` | Remove duplicated values of an array (only work with primitive values) |
+| `getEnumValues`        | Return the enum values                                                 |
+| `getTypeof`            | Fix native "typeof"                                                    |
+| `hasRequiredEnvVars`   | Verify if all env vars are defined                                     |
+| `isEmptyArray`         | Checks if is an array and it's empty                                   |
+| `isEmptyObject`        | Checks if is an object and it's empty                                  |
+| `isNotEmptyArray`      | Checks if is an array and it's NOT empty                               |
+| `isNotEmptyObject`     | Checks if is an object and it's NOT empty                              |
