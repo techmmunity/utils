@@ -13,6 +13,26 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Removed
 
+## [1.1.0] - 2021-10-17
+
+### Added
+
+- `getEnumValues`
+
+### Changed
+
+### Removed
+
+## [1.0.3] - 2021-10-17
+
+### Added
+
+### Changed
+
+- `getTypeof` returns `function` for javascript functions, like `Date`, `String`, `Object`, etc
+
+### Removed
+
 ## [1.0.2] - 2021-10-16
 
 ### Added

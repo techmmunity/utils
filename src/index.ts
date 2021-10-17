@@ -18,6 +18,7 @@ export * from "./lib/clean-obj";
 
 export * from "./lib/get-typeof";
 export * from "./lib/get-array-unique-values";
+export * from "./lib/get-enum-values";
 
 /**
  * ---------------------------------------------------------------------------
