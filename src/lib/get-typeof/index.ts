@@ -1,5 +1,3 @@
-import { isClass } from "./helpers/is-class";
-
 export type Type =
 	| "array"
 	| "boolean"
@@ -40,7 +38,7 @@ export const getTypeof = (value?: any): Type => {
 			return "boolean";
 
 		case "function":
-			if (isClass(value)) {
+			if (value.toString().startsWith("class")) {
 				return "class";
 			}
 
