@@ -80,11 +80,71 @@ describe("getTypeof Util", () => {
 	});
 
 	describe('type "class"', () => {
-		it('should return "class" with an native javascript class', () => {
+		it('should return "class" with an native javascript class (String)', () => {
 			let result: any;
 
 			try {
 				result = getTypeof(String);
+			} catch (err: any) {
+				result = err;
+			}
+
+			expect(result).toBe("class");
+		});
+
+		it('should return "class" with an native javascript class (Number)', () => {
+			let result: any;
+
+			try {
+				result = getTypeof(Number);
+			} catch (err: any) {
+				result = err;
+			}
+
+			expect(result).toBe("class");
+		});
+
+		it('should return "class" with an native javascript class (Object)', () => {
+			let result: any;
+
+			try {
+				result = getTypeof(Object);
+			} catch (err: any) {
+				result = err;
+			}
+
+			expect(result).toBe("class");
+		});
+
+		it('should return "class" with an native javascript class (Date)', () => {
+			let result: any;
+
+			try {
+				result = getTypeof(Date);
+			} catch (err: any) {
+				result = err;
+			}
+
+			expect(result).toBe("class");
+		});
+
+		it('should return "class" with an native javascript class (Boolean)', () => {
+			let result: any;
+
+			try {
+				result = getTypeof(Boolean);
+			} catch (err: any) {
+				result = err;
+			}
+
+			expect(result).toBe("class");
+		});
+
+		it('should return "class" with an native javascript class (Array)', () => {
+			let result: any;
+
+			try {
+				result = getTypeof(Array);
 			} catch (err: any) {
 				result = err;
 			}
