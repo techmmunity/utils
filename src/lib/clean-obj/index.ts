@@ -1,4 +1,4 @@
-import { getTypeof } from "lib/get-typeof";
+import { getTypeof } from "../get-typeof";
 
 export const cleanObj = <T extends Record<string, any>>(obj: T) => {
 	if (getTypeof(obj) !== "object") {

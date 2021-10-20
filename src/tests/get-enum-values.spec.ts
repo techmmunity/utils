@@ -1,4 +1,4 @@
-import { getEnumValues } from "lib/get-enum-values";
+import { getEnumValues } from "../lib/get-enum-values";
 
 describe("getEnumValues Util", () => {
 	describe("With enum that key-value match", () => {

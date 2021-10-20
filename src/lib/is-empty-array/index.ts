@@ -1,4 +1,4 @@
-import { getTypeof } from "lib/get-typeof";
+import { getTypeof } from "../get-typeof";
 
 export const isEmptyArray = (value: any) =>
 	getTypeof(value) === "array" &&

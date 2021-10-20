@@ -1,4 +1,4 @@
-import { isEmptyArray } from "lib/is-empty-array";
+import { isEmptyArray } from "../lib/is-empty-array";
 
 describe("isEmptyArray Util", () => {
 	describe("With empty array", () => {

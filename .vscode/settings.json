@@ -107,13 +107,17 @@
 
 	// Spell Checker
 	"cSpell.words": [
+		"DMYS",
 		"injectables",
+		"Luma",
+		"MDYS",
 		"nodemodules",
 		"prebuild",
 		"sonarjs",
 		"techmmunity",
 		"tsbuildinfo",
 		"Typeof",
-		"vercel"
+		"vercel",
+		"YMDS"
 	]
 }
