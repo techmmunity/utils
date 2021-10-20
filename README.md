@@ -72,37 +72,43 @@ npm i @techmmunity/utils
 
 ## `is*`
 
-| function           | description                                                  |
-| ------------------ | ------------------------------------------------------------ |
-| `isBrazilianPhone` | Return true if value is a brazilian phone                    |
-| `isCpf`            | Return true if value is a CPF                                |
-| `isDarkHexColor`   | Return true if value is a dark hex color                     |
-| `isDate`           | Return true if value is a valid date in the specified format |
-| `isDateDMY`        | Return true if value is a valid date DD-MM-YYY               |
-| `isDateDMYS`       | Return true if value is a valid date DD/MM/YYY               |
-| `isDateMDY`        | Return true if value is a valid date MM-DD-YYY               |
-| `isDateMDYS`       | Return true if value is a valid date MM/DD/YYY               |
-| `isDateYMD`        | Return true if value is a valid date YYYY-MM-DD              |
-| `isDateYMDS`       | Return true if value is a valid date YYYY/MM/DD              |
-| `isDivisibleByTen` | Return true if value is divisible by ten                     |
-| `isEmail`          | Return true if value is a valid email                        |
-| `isEmoji`          | Return true if value is an emoji (has some false-positives!) |
-| `isEmptyArray`     | Checks if is an array and it's empty                         |
-| `isEmptyObject`    | Checks if is an object and it's empty                        |
-| `isEven`           | Return true if value is a even number                        |
-| `isHerokuApiKey`   | Return true if value is a heroku api key                     |
-| `isHexColor`       | Return true if value is a valid hex color                    |
-| `isIpv4`           | Return true if value is a valid ipv4                         |
-| `isIpv4WithMask`   | Return true if value is a valid ipv4 with mask               |
-| `isLeap`           | Return true if value is a leap year                          |
-| `isLightHexColor`  | Return true if value is a light hex color                    |
-| `isMaskedCpf`      | Return true if value is a masked CPF                         |
-| `isNumeric`        | Return true if value is a numeric string                     |
-| `isOdd`            | Return true if value is a odd number                         |
-| `isStrongPassword` | Return true if value is a strong password                    |
-| `isUrl`            | Return true if value is a valid url                          |
-| `isUsername`       | Return true if value is a valid username                     |
-| `isUuidV4`         | Return true if value is a valid uuid (v4)                    |
+| function             | description                                                       |
+| -------------------- | ----------------------------------------------------------------- |
+| `isBetween`          | Return true if value is a number between 2 values                 |
+| `isBrazilianPhone`   | Return true if value is a brazilian phone                         |
+| `isCpf`              | Return true if value is a CPF                                     |
+| `isDarkHexColor`     | Return true if value is a dark hex color                          |
+| `isDate`             | Return true if value is a valid date in the specified format      |
+| `isDateDMY`          | Return true if value is a valid date DD-MM-YYY                    |
+| `isDateDMYS`         | Return true if value is a valid date DD/MM/YYY                    |
+| `isDateMDY`          | Return true if value is a valid date MM-DD-YYY                    |
+| `isDateMDYS`         | Return true if value is a valid date MM/DD/YYY                    |
+| `isDateYMD`          | Return true if value is a valid date YYYY-MM-DD                   |
+| `isDateYMDS`         | Return true if value is a valid date YYYY/MM/DD                   |
+| `isDivisibleByTen`   | Return true if value is divisible by ten                          |
+| `isEmail`            | Return true if value is a valid email                             |
+| `isEmoji`            | Return true if value is an emoji (has some false-positives!)      |
+| `isEmptyArray`       | Checks if is an array and it's empty                              |
+| `isEmptyObject`      | Checks if is an object and it's empty                             |
+| `isEven`             | Return true if value is a even number                             |
+| `isFloat`            | Return true if value is a float number (.0 numbers doesn't count) |
+| `isHerokuApiKey`     | Return true if value is a heroku api key                          |
+| `isHexColor`         | Return true if value is a valid hex color                         |
+| `isInt`              | Return true if value is a float number                            |
+| `isIpv4`             | Return true if value is a valid ipv4                              |
+| `isIpv4WithMask`     | Return true if value is a valid ipv4 with mask                    |
+| `isIsoDate`          | Return true if value is a ISO Date                                |
+| `isLeap`             | Return true if value is a leap year                               |
+| `isLightHexColor`    | Return true if value is a light hex color                         |
+| `isMaskedCpf`        | Return true if value is a masked CPF                              |
+| `isNumeric`          | Return true if value is a numeric string                          |
+| `isOdd`              | Return true if value is a odd number                              |
+| `isStrongPassword`   | Return true if value is a strong password                         |
+| `isTimeWithFraction` | Return true if value is a time in the format `hh:mm:ss.s`         |
+| `isTimezone`         | Return true if value is a time zone (Ex: +01:00, UTC, -12:00)     |
+| `isUrl`              | Return true if value is a valid url                               |
+| `isUsername`         | Return true if value is a valid username                          |
+| `isUuidV4`           | Return true if value is a valid uuid (v4)                         |
 
 ## `isNot*`
 

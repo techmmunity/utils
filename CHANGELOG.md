@@ -13,6 +13,21 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Removed
 
+## [1.3.0] - 2021-10-20
+
+### Added
+
+- `isBetween`
+- `isFloat`
+- `isInt`
+- `isIsoDate`
+- `isTimeWithFraction`
+- `isTimezone`
+
+### Changed
+
+### Removed
+
 ## [1.2.0] - 2021-10-19
 
 ### Added
