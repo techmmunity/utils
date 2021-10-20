@@ -42,6 +42,7 @@ export * from "./lib/has-url";
  * ---------------------------------------------------------------------------
  */
 
+export * from "./lib/is-between";
 export * from "./lib/is-brazilian-phone";
 export * from "./lib/is-cpf";
 export * from "./lib/is-dark-hex-color";
@@ -58,13 +59,18 @@ export * from "./lib/is-emoji";
 export * from "./lib/is-empty-array";
 export * from "./lib/is-empty-object";
 export * from "./lib/is-even";
+export * from "./lib/is-float";
 export * from "./lib/is-heroku-api-key";
 export * from "./lib/is-hex-color";
+export * from "./lib/is-int";
 export * from "./lib/is-ipv4";
 export * from "./lib/is-ipv4-with-mask";
+export * from "./lib/is-iso-date";
 export * from "./lib/is-numeric";
 export * from "./lib/is-odd";
 export * from "./lib/is-strong-password";
+export * from "./lib/is-time-with-fraction";
+export * from "./lib/is-timezone";
 export * from "./lib/is-url";
 export * from "./lib/is-username";
 export * from "./lib/is-uuid-v4";
