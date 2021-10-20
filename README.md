@@ -46,14 +46,67 @@ npm i @techmmunity/utils
 
 # Docs
 
+## Miscellaneous
+
+| function   | description                                     |
+| ---------- | ----------------------------------------------- |
+| `cleanObj` | Remove undefined and null values from an object |
+
+## `get*`
+
 | function               | description                                                            |
 | ---------------------- | ---------------------------------------------------------------------- |
-| `cleanObj`             | Remove undefined and null values from an object                        |
 | `getArrayUniqueValues` | Remove duplicated values of an array (only work with primitive values) |
+| `getHexColorLuma`      | Return the color luma of a hex color                                   |
 | `getEnumValues`        | Return the enum values                                                 |
 | `getTypeof`            | Fix native "typeof"                                                    |
-| `hasRequiredEnvVars`   | Verify if all env vars are defined                                     |
-| `isEmptyArray`         | Checks if is an array and it's empty                                   |
-| `isEmptyObject`        | Checks if is an object and it's empty                                  |
-| `isNotEmptyArray`      | Checks if is an array and it's NOT empty                               |
-| `isNotEmptyObject`     | Checks if is an object and it's NOT empty                              |
+
+## `has*`
+
+| function             | description                        |
+| -------------------- | ---------------------------------- |
+| `hasEmojis`          | Return true if value has emojis    |
+| `hasHtmlTags`        | Return true if value has html tags |
+| `hasRequiredEnvVars` | Verify if all env vars are defined |
+| `hasUrl`             | Return true if value has a url     |
+
+## `is*`
+
+| function           | description                                                  |
+| ------------------ | ------------------------------------------------------------ |
+| `isBrazilianPhone` | Return true if value is a brazilian phone                    |
+| `isCpf`            | Return true if value is a CPF                                |
+| `isDarkHexColor`   | Return true if value is a dark hex color                     |
+| `isDate`           | Return true if value is a valid date in the specified format |
+| `isDateDMY`        | Return true if value is a valid date DD-MM-YYY               |
+| `isDateDMYS`       | Return true if value is a valid date DD/MM/YYY               |
+| `isDateMDY`        | Return true if value is a valid date MM-DD-YYY               |
+| `isDateMDYS`       | Return true if value is a valid date MM/DD/YYY               |
+| `isDateYMD`        | Return true if value is a valid date YYYY-MM-DD              |
+| `isDateYMDS`       | Return true if value is a valid date YYYY/MM/DD              |
+| `isDivisibleByTen` | Return true if value is divisible by ten                     |
+| `isEmail`          | Return true if value is a valid email                        |
+| `isEmoji`          | Return true if value is an emoji (has some false-positives!) |
+| `isEmptyArray`     | Checks if is an array and it's empty                         |
+| `isEmptyObject`    | Checks if is an object and it's empty                        |
+| `isEven`           | Return true if value is a even number                        |
+| `isHerokuApiKey`   | Return true if value is a heroku api key                     |
+| `isHexColor`       | Return true if value is a valid hex color                    |
+| `isIpv4`           | Return true if value is a valid ipv4                         |
+| `isIpv4WithMask`   | Return true if value is a valid ipv4 with mask               |
+| `isLeap`           | Return true if value is a leap year                          |
+| `isLightHexColor`  | Return true if value is a light hex color                    |
+| `isMaskedCpf`      | Return true if value is a masked CPF                         |
+| `isNumeric`        | Return true if value is a numeric string                     |
+| `isOdd`            | Return true if value is a odd number                         |
+| `isStrongPassword` | Return true if value is a strong password                    |
+| `isUrl`            | Return true if value is a valid url                          |
+| `isUsername`       | Return true if value is a valid username                     |
+| `isUuidV4`         | Return true if value is a valid uuid (v4)                    |
+
+## `isNot*`
+
+| function           | description                               |
+| ------------------ | ----------------------------------------- |
+| `isNotEmptyArray`  | Checks if is an array and it's NOT empty  |
+| `isNotEmptyObject` | Checks if is an object and it's NOT empty |

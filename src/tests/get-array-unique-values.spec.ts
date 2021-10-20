@@ -1,4 +1,4 @@
-import { getArrayUniqueValues } from "lib/get-array-unique-values";
+import { getArrayUniqueValues } from "../lib/get-array-unique-values";
 
 describe("getArrayUniqueValues Util", () => {
 	describe("With empty array", () => {

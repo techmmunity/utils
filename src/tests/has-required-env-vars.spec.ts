@@ -1,4 +1,4 @@
-import { hasRequiredEnvVars } from "lib/has-required-env-vars";
+import { hasRequiredEnvVars } from "../lib/has-required-env-vars";
 
 describe("hasRequiredEnvVars Util", () => {
 	describe("With all env vars", () => {

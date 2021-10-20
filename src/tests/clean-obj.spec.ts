@@ -1,4 +1,4 @@
-import { cleanObj } from "lib/clean-obj";
+import { cleanObj } from "../lib/clean-obj";
 
 describe("cleanObj Util", () => {
 	describe("With object with no undefined values", () => {

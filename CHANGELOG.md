@@ -13,6 +13,46 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Removed
 
+## [1.2.0] - 2021-10-19
+
+### Added
+
+- `getHexColorLuma`
+- `hasEmojis`
+- `hasHtmlTags`
+- `hasUrl`
+- `isBrazilianPhone`
+- `isCpf`
+- `isDarkHexColor`
+- `isDate`
+- `isDateDMY`
+- `isDateDMYS`
+- `isDateMDY`
+- `isDateMDYS`
+- `isDateYMD`
+- `isDateYMDS`
+- `isDivisibleByTen`
+- `isEmail`
+- `isEmoji`
+- `isEven`
+- `isHerokuApiKey`
+- `isHexColor`
+- `isIpv4`
+- `isIpv4WithMask`
+- `isLeap`
+- `isLightHexColor`
+- `isMaskedCpf`
+- `isNumeric`
+- `isOdd`
+- `isStrongPassword`
+- `isUrl`
+- `isUsername`
+- `isUuidV4`
+
+### Changed
+
+### Removed
+
 ## [1.1.0] - 2021-10-17
 
 ### Added

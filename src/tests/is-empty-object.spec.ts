@@ -1,4 +1,4 @@
-import { isEmptyObject } from "lib/is-empty-object";
+import { isEmptyObject } from "../lib/is-empty-object";
 
 describe("isEmptyObject Util", () => {
 	describe("With empty object", () => {

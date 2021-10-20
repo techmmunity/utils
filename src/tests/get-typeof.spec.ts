@@ -1,6 +1,6 @@
 /* eslint-disable max-nested-callbacks */
 
-import { getTypeof } from "lib/get-typeof";
+import { getTypeof } from "../lib/get-typeof";
 
 describe("getTypeof Util", () => {
 	describe('type "array"', () => {

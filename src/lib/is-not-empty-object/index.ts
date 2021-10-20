@@ -1,4 +1,4 @@
-import { getTypeof } from "lib/get-typeof";
+import { getTypeof } from "../get-typeof";
 
 export const isNotEmptyObject = (value: any) =>
 	getTypeof(value) === "object" &&
