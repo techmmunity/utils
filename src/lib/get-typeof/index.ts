@@ -20,6 +20,14 @@ export const getTypeof = (value?: any): Type => {
 				case Array.isArray(value):
 					return "array";
 
+				/**
+				 * INSTANCES OF CLASSES SHOULD BE OBJECTS!!!!
+				 * DO NOT ADD A VALIDATION HERE!!!!
+				 *
+				 * class -> Thing that you can do `new Class()`
+				 * instance -> Thing that you **CAN'T** do `new Class()`
+				 */
+
 				default:
 					return "object";
 			}
