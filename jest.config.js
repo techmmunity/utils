@@ -13,6 +13,7 @@ module.exports = {
 	testEnvironment: "node",
 	moduleDirectories: ["node_modules", "src"],
 	resetMocks: true,
+	testTimeout: 15000,
 	coverageThreshold: {
 		global: {
 			statements: 99.17,
