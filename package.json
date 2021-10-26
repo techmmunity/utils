@@ -1,6 +1,6 @@
 {
 	"name": "@techmmunity/utils",
-	"version": "1.4.0",
+	"version": "1.0.0",
 	"main": "index.js",
 	"types": "index.d.ts",
 	"license": "Apache-2.0",
@@ -46,7 +46,7 @@
 		"build": "ncc build src/index.ts -o dist -m -s",
 		"format": "eslint . --fix --quiet",
 		"lint": "eslint . --quiet",
-		"update-dependencies": "yarn upgrade-interactive --latest",
+		"upgrade-dependencies": "yarn upgrade-interactive --latest",
 		"husky:pre-commit": "tsc",
 		"lk": "yarn build && cp package.json dist/package.json && cd dist && yarn link && cd .."
 	}

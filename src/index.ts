@@ -20,6 +20,7 @@ export * from "./lib/sleep";
 export * from "./lib/get-array-unique-values";
 export * from "./lib/get-enum-values";
 export * from "./lib/get-hex-color-luma";
+export { getRootPath } from "./lib/get-root-path";
 export * from "./lib/get-typeof";
 
 /**
