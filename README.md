@@ -58,8 +58,9 @@ npm i @techmmunity/utils
 | function               | description                                                            |
 | ---------------------- | ---------------------------------------------------------------------- |
 | `getArrayUniqueValues` | Remove duplicated values of an array (only work with primitive values) |
-| `getHexColorLuma`      | Return the color luma of a hex color                                   |
 | `getEnumValues`        | Return the enum values                                                 |
+| `getHexColorLuma`      | Return the color luma of a hex color                                   |
+| `getRootPath`          | Get root path to something from the root folder of the process         |
 | `getTypeof`            | Fix native "typeof"                                                    |
 
 ## `has*`
