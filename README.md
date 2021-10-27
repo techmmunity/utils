@@ -105,6 +105,7 @@ npm i @techmmunity/utils
 | `isMaskedCpf`        | Return true if value is a masked CPF                              |
 | `isNumeric`          | Return true if value is a numeric string                          |
 | `isOdd`              | Return true if value is a odd number                              |
+| `isPackageInstalled` | Return true if the package is installed                           |
 | `isStrongPassword`   | Return true if value is a strong password                         |
 | `isTimeWithFraction` | Return true if value is a time in the format `hh:mm:ss.s`         |
 | `isTimezone`         | Return true if value is a time zone (Ex: +01:00, UTC, -12:00)     |

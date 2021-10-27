@@ -4,7 +4,7 @@ import { LEADING_BAR } from "../lib/get-root-path";
 
 describe("getRootPath", () => {
 	it.todo(
-		"it uses mainly node features and a regex, so this cannot be tested in a efficient way",
+		"it uses mainly node features and a regex, so this cannot be truly tested",
 	);
 
 	it("should replace correctly without /", () => {

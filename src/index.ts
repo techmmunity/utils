@@ -70,6 +70,7 @@ export * from "./lib/is-ipv4-with-mask";
 export * from "./lib/is-iso-date";
 export * from "./lib/is-numeric";
 export * from "./lib/is-odd";
+export * from "./lib/is-package-installed";
 export * from "./lib/is-strong-password";
 export * from "./lib/is-time-with-fraction";
 export * from "./lib/is-timezone";

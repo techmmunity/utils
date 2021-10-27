@@ -12,6 +12,7 @@ module.exports = {
 		"**/*.ts",
 		"!./index.ts",
 		"!./lib/get-root-path/index.ts",
+		"!./lib/is-package-installed/index.ts",
 	],
 	coverageDirectory: "../coverage",
 	testEnvironment: "node",
