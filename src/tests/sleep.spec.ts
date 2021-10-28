@@ -18,7 +18,7 @@ describe("sleep", () => {
 		const offset = timeAfter - timeBefore;
 
 		// Cannot test the exact time, so test a range
-		expect(isBetween(offset, 1000, 1010)).toBeTruthy();
+		expect(isBetween(offset, 1000, 1050)).toBeTruthy();
 	});
 
 	it("with 10 seconds", async () => {
@@ -31,6 +31,6 @@ describe("sleep", () => {
 		const offset = timeAfter - timeBefore;
 
 		// Cannot test the exact time, so test a range
-		expect(isBetween(offset, 10000, 10010)).toBeTruthy();
+		expect(isBetween(offset, 10000, 10050)).toBeTruthy();
 	});
 });
