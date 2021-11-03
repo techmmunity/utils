@@ -35,6 +35,10 @@ describe("isCpf (return True)", () => {
  */
 
 describe("isCpf (return False)", () => {
+	it("with empty cpf", () => {
+		expect(isCpf("")).toBe(false);
+	});
+
 	it("with masked cpf", () => {
 		expect(isCpf("553.573.140-47")).toBe(false);
 	});

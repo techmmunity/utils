@@ -27,6 +27,8 @@ const notCpf = [
 export const isCpf = (cpf: string) => {
 	if (getTypeof(cpf) !== "string") return false;
 
+	if (cpf === "") return false;
+
 	let temp: string;
 	let count: number;
 	let total: number;

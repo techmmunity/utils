@@ -78,6 +78,7 @@ npm i @techmmunity/utils
 | -------------------- | ----------------------------------------------------------------- |
 | `isBetween`          | Return true if value is a number between 2 values                 |
 | `isBrazilianPhone`   | Return true if value is a brazilian phone                         |
+| `isCnpj`             | Return true if value is a CNPJ                                    |
 | `isCpf`              | Return true if value is a CPF                                     |
 | `isDarkHexColor`     | Return true if value is a dark hex color                          |
 | `isDate`             | Return true if value is a valid date in the specified format      |
@@ -102,6 +103,7 @@ npm i @techmmunity/utils
 | `isIsoDate`          | Return true if value is a ISO Date                                |
 | `isLeap`             | Return true if value is a leap year                               |
 | `isLightHexColor`    | Return true if value is a light hex color                         |
+| `isMaskedCnpj`       | Return true if value is a masked CNPJ                             |
 | `isMaskedCpf`        | Return true if value is a masked CPF                              |
 | `isNumeric`          | Return true if value is a numeric string                          |
 | `isOdd`              | Return true if value is a odd number                              |

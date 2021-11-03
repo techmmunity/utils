@@ -46,6 +46,7 @@ export * from "./lib/has-url";
 
 export * from "./lib/is-between";
 export * from "./lib/is-brazilian-phone";
+export * from "./lib/is-cnpj";
 export * from "./lib/is-cpf";
 export * from "./lib/is-dark-hex-color";
 export * from "./lib/is-date";
@@ -68,6 +69,10 @@ export * from "./lib/is-int";
 export * from "./lib/is-ipv4";
 export * from "./lib/is-ipv4-with-mask";
 export * from "./lib/is-iso-date";
+export * from "./lib/is-leap";
+export * from "./lib/is-light-hex-color";
+export * from "./lib/is-masked-cnpj";
+export * from "./lib/is-masked-cpf";
 export * from "./lib/is-numeric";
 export * from "./lib/is-odd";
 export * from "./lib/is-package-installed";

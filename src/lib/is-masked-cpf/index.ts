@@ -6,4 +6,4 @@ const MASKED_CPF = /^\d{3}\.\d{3}\.\d{3}-\d{2}$/;
 export const isMaskedCpf = (maskedCPF: string) =>
 	getTypeof(maskedCPF) === "string" &&
 	MASKED_CPF.test(maskedCPF) &&
-	isCpf(maskedCPF.replace(/\D/g, ""));
+	isCpf(maskedCPF.replace(/[^\d]+/g, ""));
