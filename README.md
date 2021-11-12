@@ -77,6 +77,7 @@ npm i @techmmunity/utils
 
 | function             | description                                                       |
 | -------------------- | ----------------------------------------------------------------- |
+| `isAlphanumeric`     | Return true if value is a number or a letter                      |
 | `isBetween`          | Return true if value is a number between 2 values                 |
 | `isBrazilianPhone`   | Return true if value is a brazilian phone                         |
 | `isCnpj`             | Return true if value is a CNPJ                                    |

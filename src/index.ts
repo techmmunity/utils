@@ -8,6 +8,7 @@
 
 export * from "./lib/clean-obj";
 export * from "./lib/sleep";
+export * from "./lib/unnest";
 
 /**
  * ---------------------------------------------------------------------------
@@ -44,6 +45,7 @@ export * from "./lib/has-url";
  * ---------------------------------------------------------------------------
  */
 
+export * from "./lib/is-alphanumeric";
 export * from "./lib/is-between";
 export * from "./lib/is-brazilian-phone";
 export * from "./lib/is-cnpj";
