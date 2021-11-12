@@ -18,11 +18,10 @@ module.exports = {
 	testEnvironment: "node",
 	moduleDirectories: ["node_modules", "src"],
 	resetMocks: true,
-	testTimeout: 15000,
 	coverageThreshold: {
 		global: {
-			statements: 99.04,
-			branches: 97.86,
+			statements: 99.1,
+			branches: 95.5,
 			functions: 100,
 			lines: 99.68,
 		},
