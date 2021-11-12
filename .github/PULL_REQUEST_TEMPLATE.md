@@ -11,6 +11,7 @@ Please check if your PR fulfills the following requirements:
 - [ ] The commit message follows our guidelines: https://github.com/techmmunity/utils/blob/master/CONTRIBUTING.md
 - [ ] Tests for the changes have been added / updated
 - [ ] Docs have been added / updated
+- [ ] The changes has been added to `CHANGELOG.md`
 - [ ] I followed GitFlow pattern to create the branch
 - [ ] My code produces no warnings or errors
 
