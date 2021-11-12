@@ -46,6 +46,13 @@ export const getTypeof = (value?: any): Type => {
 			return "boolean";
 
 		case "function":
+			/**
+			 * INSTANCES OF CLASSES SHOULD BE OBJECTS!!!!
+			 * DO NOT ADD A VALIDATION HERE!!!!
+			 *
+			 * class -> Thing that you can do `new Class()`
+			 * instance -> Thing that you **CAN'T** do `new Class()`
+			 */
 			if (value.toString().startsWith("class")) {
 				return "class";
 			}

@@ -52,6 +52,7 @@ npm i @techmmunity/utils
 | ---------- | ----------------------------------------------- |
 | `cleanObj` | Remove undefined and null values from an object |
 | `sleep`    | Await the amount of time specified (in seconds) |
+| `unnest`   | Plain objects and arrays                        |
 
 ## `get*`
 
