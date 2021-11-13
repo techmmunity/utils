@@ -1,4 +1,5 @@
 import { getTypeof } from "../get-typeof";
+import { isClassInstance } from "../is-class-instance";
 
 interface HandleArrayParams {
 	acc: Record<string, any>;
@@ -53,10 +54,7 @@ const handleArray = ({
 
 const handleObject = ({ acc, key, value }: HandleObjectParams) => {
 	// Classes or classes instances should be the same
-	if (
-		getTypeof(value) === "class" ||
-		value.constructor?.toString().startsWith("class")
-	) {
+	if (getTypeof(value) === "class" || isClassInstance(value)) {
 		acc[key] = value;
 
 		return;

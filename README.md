@@ -81,6 +81,7 @@ npm i @techmmunity/utils
 | `isAlphanumeric`     | Return true if value is a number or a letter                      |
 | `isBetween`          | Return true if value is a number between 2 values                 |
 | `isBrazilianPhone`   | Return true if value is a brazilian phone                         |
+| `isClassInstance`    | Return true if value is a class instance                          |
 | `isCnpj`             | Return true if value is a CNPJ                                    |
 | `isCpf`              | Return true if value is a CPF                                     |
 | `isDarkHexColor`     | Return true if value is a dark hex color                          |
