@@ -8,6 +8,7 @@
 
 export * from "./lib/clean-obj";
 export * from "./lib/sleep";
+export * from "./lib/nest";
 export * from "./lib/unnest";
 
 /**
@@ -48,6 +49,7 @@ export * from "./lib/has-url";
 export * from "./lib/is-alphanumeric";
 export * from "./lib/is-between";
 export * from "./lib/is-brazilian-phone";
+export * from "./lib/is-class-instance";
 export * from "./lib/is-cnpj";
 export * from "./lib/is-cpf";
 export * from "./lib/is-dark-hex-color";
