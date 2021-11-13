@@ -8,11 +8,12 @@ Issue Number: N/A
 
 Please check if your PR fulfills the following requirements:
 
-- [ ] The commit message follows our guidelines: https://github.com/techmmunity/utils/blob/master/CONTRIBUTING.md
+- [ ] The commit message follows [our guidelines](https://github.com/techmmunity/utils/blob/master/CONTRIBUTING.md)
+- [ ] [GitFlow](https://github.com/techmmunity/git-magic/blob/master/docs/en/gitflow.md) have been used
 - [ ] Tests for the changes have been added / updated
-- [ ] Docs have been added / updated
+- [ ] Docs have been added / updated to `README.md`
 - [ ] The changes has been added to `CHANGELOG.md`
-- [ ] I followed GitFlow pattern to create the branch
+- [ ] Exports for the new functions have been added to `src/index.ts`
 - [ ] My code produces no warnings or errors
 
 ## PR Type
