@@ -1,4 +1,4 @@
-import { unnest } from "../lib/unnest";
+import { nest } from "../lib/nest";
 
 /**
  *
@@ -13,7 +13,7 @@ import { unnest } from "../lib/unnest";
  *
  *
  */
-describe("unnest Util", () => {
+describe("nest Util", () => {
 	describe("With object with no undefined values", () => {
 		class Foo {
 			public bar = "bar";
@@ -25,7 +25,7 @@ describe("unnest Util", () => {
 			let result: any;
 
 			try {
-				result = unnest({
+				result = nest({
 					foo: 1,
 					xyz: 2,
 					def: 3,
@@ -45,25 +45,25 @@ describe("unnest Util", () => {
 			let result: any;
 
 			try {
-				result = unnest({
-					foo: 1,
-					bar: {
-						xyz: 2,
-						abc: {
-							def: 3,
-							ufg: [1],
-						},
-					},
+				result = nest({
+					"foo": 1,
+					"bar.xyz": 2,
+					"bar.abc.def": 3,
+					"bar.abc.ufg.[0]": 1,
 				});
 			} catch (err: any) {
 				result = err;
 			}
 
 			expect(result).toStrictEqual({
-				"foo": 1,
-				"bar.xyz": 2,
-				"bar.abc.def": 3,
-				"bar.abc.ufg.[0]": 1,
+				foo: 1,
+				bar: {
+					xyz: 2,
+					abc: {
+						def: 3,
+						ufg: [1],
+					},
+				},
 			});
 		});
 
@@ -71,17 +71,17 @@ describe("unnest Util", () => {
 			let result: any;
 
 			try {
-				result = unnest({
-					ghi: [1, 2, 3],
+				result = nest({
+					"ghi.[0]": 1,
+					"ghi.[1]": 2,
+					"ghi.[2]": 3,
 				});
 			} catch (err: any) {
 				result = err;
 			}
 
 			expect(result).toStrictEqual({
-				"ghi.[0]": 1,
-				"ghi.[1]": 2,
-				"ghi.[2]": 3,
+				ghi: [1, 2, 3],
 			});
 		});
 
@@ -89,23 +89,23 @@ describe("unnest Util", () => {
 			let result: any;
 
 			try {
-				result = unnest({
-					ghi: [
-						{
-							jkl: 4,
-						},
-						{
-							foo: 5,
-						},
-					],
+				result = nest({
+					"ghi.[0].jkl": 4,
+					"ghi.[1].foo": 5,
 				});
 			} catch (err: any) {
 				result = err;
 			}
 
 			expect(result).toStrictEqual({
-				"ghi.[0].jkl": 4,
-				"ghi.[1].foo": 5,
+				ghi: [
+					{
+						jkl: 4,
+					},
+					{
+						foo: 5,
+					},
+				],
 			});
 		});
 
@@ -113,17 +113,17 @@ describe("unnest Util", () => {
 			let result: any;
 
 			try {
-				result = unnest({
-					ghi: [[1], [2], [3]],
+				result = nest({
+					"ghi.[0].[0]": 1,
+					"ghi.[1].[0]": 2,
+					"ghi.[2].[0]": 3,
 				});
 			} catch (err: any) {
 				result = err;
 			}
 
 			expect(result).toStrictEqual({
-				"ghi.[0].[0]": 1,
-				"ghi.[1].[0]": 2,
-				"ghi.[2].[0]": 3,
+				ghi: [[1], [2], [3]],
 			});
 		});
 
@@ -131,17 +131,17 @@ describe("unnest Util", () => {
 			let result: any;
 
 			try {
-				result = unnest({
-					bar: {
-						xyz: Foo,
-					},
+				result = nest({
+					"bar.xyz": Foo,
 				});
 			} catch (err: any) {
 				result = err;
 			}
 
 			expect(result).toStrictEqual({
-				"bar.xyz": Foo,
+				bar: {
+					xyz: Foo,
+				},
 			});
 		});
 
@@ -149,36 +149,52 @@ describe("unnest Util", () => {
 			let result: any;
 
 			try {
-				result = unnest({
-					bar: {
-						xyz: foo,
-					},
+				result = nest({
+					"bar.xyz": foo,
 				});
 			} catch (err: any) {
 				result = err;
 			}
 
 			expect(result).toStrictEqual({
-				"bar.xyz": foo,
+				bar: {
+					xyz: foo,
+				},
 			});
 		});
 	});
 
 	describe("With array with no undefined values", () => {
-		it("should return the same object (with simple object)", () => {
+		it("should return the same object (with simple array)", () => {
 			let result: any;
 
 			try {
-				result = unnest(["foo", "xyz", "def"]);
+				result = nest({
+					"[0]": "foo",
+					"[1]": "xyz",
+					"[2]": "def",
+				});
 			} catch (err: any) {
 				result = err;
 			}
 
-			expect(result).toStrictEqual({
-				"[0]": "foo",
-				"[1]": "xyz",
-				"[2]": "def",
-			});
+			expect(result).toStrictEqual(["foo", "xyz", "def"]);
+		});
+
+		it("should return the same object (with nested array)", () => {
+			let result: any;
+
+			try {
+				result = nest({
+					"[0].[0]": "foo",
+					"[1].[0]": "xyz",
+					"[2].[0]": "def",
+				});
+			} catch (err: any) {
+				result = err;
+			}
+
+			expect(result).toStrictEqual([["foo"], ["xyz"], ["def"]]);
 		});
 	});
 
@@ -187,12 +203,10 @@ describe("unnest Util", () => {
 			let result: any;
 
 			try {
-				result = unnest({
-					foo: undefined,
-					bar: {
-						xyz: null,
-					},
-					ghi: [undefined],
+				result = nest({
+					"foo": undefined,
+					"bar.xyz": null,
+					"ghi.[0]": undefined,
 				});
 			} catch (err: any) {
 				result = err;
@@ -202,12 +216,12 @@ describe("unnest Util", () => {
 		});
 	});
 
-	describe("With NOT object or array", () => {
+	describe("With NOT object", () => {
 		it("should return an empty object", () => {
 			let result: any;
 
 			try {
-				result = unnest();
+				result = nest();
 			} catch (err: any) {
 				result = err;
 			}
@@ -219,7 +233,7 @@ describe("unnest Util", () => {
 			let result: any;
 
 			try {
-				result = unnest("foo" as any);
+				result = nest("foo" as any);
 			} catch (err: any) {
 				result = err;
 			}

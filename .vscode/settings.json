@@ -119,6 +119,7 @@
 		"tsbuildinfo",
 		"Typeof",
 		"unnest",
+		"unnested",
 		"vercel",
 		"YMDS"
 	]

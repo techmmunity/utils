@@ -18,7 +18,7 @@ const handleArray = ({
 	value: fatherValue,
 }: HandleArrayParams) => {
 	fatherValue.forEach((val, idx) => {
-		const key = `${fatherKey}[${idx}]`;
+		const key = `${fatherKey}.[${idx}]`;
 		const value = val;
 
 		switch (getTypeof(val)) {
@@ -55,7 +55,7 @@ const handleObject = ({ acc, key, value }: HandleObjectParams) => {
 	// Classes or classes instances should be the same
 	if (
 		getTypeof(value) === "class" ||
-		value?.constructor?.toString()?.startsWith("class")
+		value.constructor?.toString().startsWith("class")
 	) {
 		acc[key] = value;
 
@@ -122,7 +122,7 @@ const handleObject = ({ acc, key, value }: HandleObjectParams) => {
  *   foo: 1,
  *   "bar.xyz": 2,
  *   "bar.abc.def": 3,
- *   "ghi[0].jkl": 4,
+ *   "ghi.[0].jkl": 4,
  * }
  * ```
  */
@@ -131,7 +131,11 @@ export const unnest = (obj?: Array<any> | Record<string, any>) => {
 		throw new Error("Value must be an object");
 	}
 
-	return Object.entries(obj || {}).reduce((acc, [key, value]) => {
+	const isArray = Array.isArray(obj);
+
+	return Object.entries(obj || {}).reduce((acc, [rawKey, value]) => {
+		const key = isArray ? `[${rawKey}]` : rawKey;
+
 		switch (getTypeof(value)) {
 			case "array":
 				handleArray({
