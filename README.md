@@ -50,6 +50,7 @@ npm i @techmmunity/utils
 
 | function   | description                                     |
 | ---------- | ----------------------------------------------- |
+| `chunk`    | Chunks an array                                 |
 | `cleanObj` | Remove undefined and null values from an object |
 | `sleep`    | Await the amount of time specified (in seconds) |
 | `nest`     | Nest objects that have been unnested            |
