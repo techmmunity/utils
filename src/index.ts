@@ -6,6 +6,7 @@
  * ---------------------------------------------------------------------------
  */
 
+export * from "./lib/chunk";
 export * from "./lib/clean-obj";
 export * from "./lib/sleep";
 export * from "./lib/nest";
