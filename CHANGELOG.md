@@ -15,6 +15,18 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Removed
 
+## [1.9.1] - 2021-12-04
+
+### Added
+
+### Changed
+
+- Add support to `NODE_PATH` on `isPackageInstalled`
+
+### Fixed
+
+### Removed
+
 ## [1.9.0] - 2021-11-18
 
 ### Added

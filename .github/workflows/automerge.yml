@@ -1,4 +1,5 @@
-name: "Automerge"
+name: Automerge
+
 on:
   workflow_run:
     workflows:

@@ -11,5 +11,11 @@ import { getRootPath } from "../get-root-path";
 export const isPackageInstalled = (packageName: string) => {
 	const { existsSync } = require("fs");
 
-	return existsSync(getRootPath(`node_modules/${packageName}`));
+	const pathsToTry = [
+		getRootPath(`node_modules/${packageName}`),
+		process.env.NODE_PATH &&
+			getRootPath(`${process.env.NODE_PATH}/${packageName}`),
+	].filter(Boolean);
+
+	return pathsToTry.some(path => existsSync(path));
 };
