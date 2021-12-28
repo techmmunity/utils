@@ -21,7 +21,9 @@ export * from "./lib/unnest";
  */
 
 export * from "./lib/get-array-unique-values";
+export * from "./lib/get-aspect-ratio";
 export * from "./lib/get-enum-values";
+export * from "./lib/get-gcd";
 export * from "./lib/get-hex-color-luma";
 export { getRootPath } from "./lib/get-root-path";
 export * from "./lib/get-typeof";

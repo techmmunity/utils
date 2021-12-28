@@ -1,6 +1,18 @@
 /* eslint-disable no-mixed-operators */
 import { getTypeof } from "../get-typeof";
 
+/**
+ * Divides an array in chunks with N items
+ *
+ * Ex:
+ * ```ts
+ * chunk([1, 2, 3], 1)
+ * // [[1], [2], [3]]
+ *
+ * chunk([1, 2, 3], 2)
+ * // [[1, 2], [3]]
+ * ```
+ */
 export const chunk = <T extends Array<any>>(
 	arr: T,
 	length: number,

@@ -30,6 +30,16 @@
 
 Package of utils, make in a way to let you import only the functions that you really need, so it doesn't make your project heavier than it needs to be.
 
+**Every util is optimized to only contain the necessary code**, so even if this package have 1M utils, if you are using babel, webpack or @vercel/ncc, the compiled code will only contain the utils that you are using.
+
+We also have **zero external dependencies**, so everything that can cause trouble to your project is inside this repository! It makes easier to check and validate if the code match your expectations and is good enough for your project.
+
+## :warning: WARNING :warning:
+
+The package may not be updated so often, but it not means that it has been abandoned. We do the utils in a way to (almost) never have to touch it again, and we only update the package to add new features, what may don't need to happen so often.
+
+You can safely use this package, even if it don't receive updates in a year, and if you find any bug, you can report it by creating a issue in the GitHub repository, or create a PR to fix it! We will always give it special attention.
+
 ## Install
 
 With Yarn:
@@ -61,7 +71,9 @@ npm i @techmmunity/utils
 | function               | description                                                            |
 | ---------------------- | ---------------------------------------------------------------------- |
 | `getArrayUniqueValues` | Remove duplicated values of an array (only work with primitive values) |
+| `getAspectRatio`       | Gets the aspect ratio (like 16:9, 4:3)                                 |
 | `getEnumValues`        | Return the enum values                                                 |
+| `getGCD`               | Gets the Greatest Common Divisor (GCD)                                 |
 | `getHexColorLuma`      | Return the color luma of a hex color                                   |
 | `getRootPath`          | Get root path to something from the root folder of the process         |
 | `getTypeof`            | Fix native "typeof"                                                    |
