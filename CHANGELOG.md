@@ -15,6 +15,19 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Removed
 
+## [1.10.0] - 2021-12-28
+
+### Added
+
+- `getAspectRatio`
+- `getGCD`
+
+### Changed
+
+### Fixed
+
+### Removed
+
 ## [1.9.1] - 2021-12-04
 
 ### Added
