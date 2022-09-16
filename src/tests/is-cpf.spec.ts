@@ -26,6 +26,14 @@ describe("isCpf (return True)", () => {
 	it("with valid cpf (5)", () => {
 		expect(isCpf("88541113094")).toBe(true);
 	});
+
+	it("with valid cpf (6)", () => {
+		expect(isCpf("32876487306")).toBe(true);
+	});
+
+	it("with valid cpf (7)", () => {
+		expect(isCpf("11886446458")).toBe(true);
+	});
 });
 
 /**
@@ -37,6 +45,10 @@ describe("isCpf (return True)", () => {
 describe("isCpf (return False)", () => {
 	it("with empty cpf", () => {
 		expect(isCpf("")).toBe(false);
+	});
+
+	it("with extra words", () => {
+		expect(isCpf("55357314047 CPF")).toBe(false);
 	});
 
 	it("with masked cpf", () => {
