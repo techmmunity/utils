@@ -28,6 +28,7 @@ export const isCpf = (cpf: string) => {
 	if (getTypeof(cpf) !== "string") return false;
 
 	if (cpf === "") return false;
+	if (!/^\d{11}$/.test(cpf)) return false;
 
 	let temp: string;
 	let count: number;
